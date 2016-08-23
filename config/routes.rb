@@ -1,7 +1,7 @@
 Rails.application.routes.draw do
 
   root to: 'vacancies#index'
-  resources :vacancies, only: [:index, :show] do 
+  resources :vacancies, only: [:index, :show] do
     resources :cvfiles, only: [:create]
   end
   resources :companies, only: [:index, :show]

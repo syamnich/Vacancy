@@ -14,7 +14,7 @@
       = @vacancy.description
 .row
   .col-md-12
-    = form_for [@vacancy, @cvfile] do |f| 
+    = form_for [@vacancy, @cvfile] do |f|
       = f.label :file, t('.file_path')
       = f.file_field :file
-      = f.submit t('.send'), class: "btn btn-primary btn-xs send" 
+      = f.submit t('.send'), class: "btn btn-primary btn-xs send"
