@@ -36,6 +36,7 @@ gem 'devise-bootstrap-views'
 gem 'pry'
 gem 'activemodel-serializers-xml', github: 'rails/activemodel-serializers-xml'
 gem 'kaminari'
+gem 'ffaker', '~> 2.2'
 
 gem 'rubocop', require: false
 gem 'haml-lint', require: false
@@ -46,7 +47,6 @@ group :development, :test do
   # Call 'byebug' anywhere in the code to stop execution and get a debugger console
   gem 'byebug', platform: :mri
   gem 'rspec-rails'
-  gem 'ffaker', '~> 2.2'
 end
 
 group :development do
