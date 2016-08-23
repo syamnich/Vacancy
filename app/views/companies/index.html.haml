@@ -1,0 +1,13 @@
+- @companies.each do |company|
+  .row
+    .col-md-12
+      %h2
+        = link_to company.name, company_path(company.id)
+  .row
+    .col-md-12
+      %h4
+        = company.info
+  .row
+    .col-md-12
+      %p.lead
+        = company.description

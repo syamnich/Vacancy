@@ -1,0 +1,23 @@
+.row
+  .col-md-12.vacancies-search
+    = form_tag vacancies_path, method: 'get' do
+      .col-md-4.vacancies-search-input
+        = text_field_tag :search, params[:search], class: "form-control"
+      .col-md-1
+        = submit_tag "Search", name: nil, class: "btn btn-primary"
+- @vacancies.each do |vacancy|
+  .row.vacancy
+    .row
+      .col-md-12
+        %h2
+          = link_to vacancy.name , vacancy_path(vacancy.id)
+    .row
+      .col-md-12
+        %h4
+          = vacancy.company_info
+    .row
+      .col-md-12
+        %p.lead
+          = vacancy.description
+= paginate @vacancies
+= page_entries_info @vacancies

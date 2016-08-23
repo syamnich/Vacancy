@@ -1,0 +1,20 @@
+.row
+  .col-md-12
+    %h2
+      = @vacancy.name
+.row
+  .col-md-4
+    = t '.deadline'
+    = l @vacancy.date, format: :short
+  .col-md-1
+    = @vacancy.state
+.row
+  .col-md-12
+    %p.lead
+      = @vacancy.description
+.row
+  .col-md-12
+    = form_for [@vacancy, @cvfile] do |f| 
+      = f.label :file, t('.file_path')
+      = f.file_field :file
+      = f.submit t('.send'), class: "btn btn-primary btn-xs send" 
