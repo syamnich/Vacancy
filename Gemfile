@@ -29,7 +29,6 @@ gem 'jbuilder', '~> 2.5'
 
 # Use Capistrano for deployment
 # gem 'capistrano-rails', group: :development
-gem 'pg', '~> 0.18.4'
 gem 'haml-rails'
 gem 'bootstrap-sass', '~> 3.3', '>= 3.3.7'
 gem 'carrierwave'
@@ -72,3 +71,8 @@ group :test do
   gem 'simplecov', :require => false
   gem 'selenium-webdriver'
 end
+
+group :development, :production do
+  gem 'pg', '~> 0.18.4'
+end
+ruby "2.3.1"
