@@ -67,3 +67,6 @@ Style/TrailingBlankLines:
 Style/TrailingWhitespace:
   Exclude:
     - 'spec/support/database_cleaner.rb'
+
+Style/FrozenStringLiteralComment:
+  Enabled: false

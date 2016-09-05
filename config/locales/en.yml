@@ -34,5 +34,5 @@ en:
       deadline: "Deadline:"
   vacancies:
     show:
-      file_path: "File"
+      file_path: "Send CV"
       send: "Send"

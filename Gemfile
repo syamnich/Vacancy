@@ -27,7 +27,7 @@ gem 'jbuilder', '~> 2.5'
 
 # Use Capistrano for deployment
 # gem 'capistrano-rails', group: :development
-gem 'haml-rails'
+gem 'pg', '~> 0.18.4'
 gem 'bootstrap-sass', '~> 3.3', '>= 3.3.7'
 gem 'carrierwave'
 gem 'mini_magick'
@@ -39,7 +39,7 @@ gem 'kaminari'
 gem 'ffaker', '~> 2.2'
 
 gem 'rubocop', require: false
-gem 'haml-lint', require: false
+gem 'haml_lint', '~> 0.18.2'
 gem 'erb2haml'
 gem 'rails_best_practices'
 
@@ -68,9 +68,5 @@ group :test do
   gem 'fuubar'
   gem 'simplecov', :require => false
   gem 'selenium-webdriver'
-end
-
-group :development, :production do
-  gem 'pg', '~> 0.18.4'
 end
 ruby "2.3.1"

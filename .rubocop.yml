@@ -1,4 +1,6 @@
 inherit_from: .rubocop_todo.yml
+Documentation:
+  Enabled: false
 AllCops:
   Include:
     - '**/Rakefile'
@@ -8,3 +10,5 @@ AllCops:
     - 'config/**/*'
     - 'script/**/*'
     - !ruby/regexp /old_and_unused\.rb$/
+  Style:
+    - 'FrozenStringLiteralComment'
